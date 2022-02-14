@@ -1,14 +1,30 @@
-//     export let newStorage = []
-// document.querySelector('.add-button').addEventListener('click', () => {
-//       let string = document.getElementById('form-input').value
-//       let time = getDate();
-//       newStorage.push({ "id" : time , "content": string, "completed": false })
-//     });
+import { addToLocalStorage } from './ls.js'
+import { list, listContainer } from './todo.js'
 
+listContainer.addEventListener('click', function(event) {
+    
+    if (event.target.type === 'checkbox') {
+      checked(event.target.parentElement.getAttribute('data-key'));
+    }
+    if (event.target.classList.contains('delete-button')) {
+        let dataKey = event.target.parentElement.getAttribute('data-key')
+      deleteList(dataKey);
+    }
+  });
 
-// function getDate(){
-//     let date = Date.now()
-//     return date;
-// }
-
-
+export function checked(id){
+    list.forEach(i => {
+        if (i.id == id){
+            i.completed = !i.completed
+        }
+    });
+    addToLocalStorage(list);
+}
+export function deleteList(id) {
+    console.log(id)
+    console.log(list)
+  let newList = list.filter(function(i) {
+    return i.id != id;
+  });
+  addToLocalStorage(newList);
+}
