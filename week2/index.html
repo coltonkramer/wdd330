@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Reading</title>
+</head>
+<body>
+    <h1>Week 2 Readings</h1>
+    <p>Here are a couple of examples I worked through:
+
+        // Your code here.
+        function isEven(x) {
+            if(x % 2 == 0){
+                return true;
+            }
+          else if(x < 0){
+            return '??'
+          }
+          else{
+            return false
+          }
+        }
+        
+        console.log(isEven(50));
+        // → true
+        console.log(isEven(75));
+        // → false
+        console.log(isEven(-1));
+        // → ??
+        
+        ----------------------------------------------------------------------------------
+        
+        // Your code here.
+        let count = 0
+        function countChar(test){
+               for(i = 0; i < test.length; i++){
+                if (string[i] == ch) {
+                    count += 1;
+               }
+               return count;
+        }
+        function countBs(string) {
+            return countChar(string, "B");
+          }
+        
+        console.log(countBs("BBC"));
+        // → 2
+        console.log(countChar("kakkerlak", "k"));
+        // → 4</p>
+</body>
+</html>
