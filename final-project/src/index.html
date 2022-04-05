@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Final Project</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <h1>Kramer National Weather | WXYZ</h1>
+        <h2 id="location"></h2>
+        <div class="form-wrapper">
+                <label for="zipcode">Location:</label>
+                <input type="number" name="zipcode" placeholder="Enter your zipcode" id="zip-input"></input>
+                <button type="submit" id="submit-button">Get Forecast</button>
+            </form>
+        </div>
+        <section class="today">
+            <div class="today-wrapper">
+                <h3>Today</h3>
+                <img src="#" alt="beautiful image">
+                <ul>
+                    <li><span id = "today-weather"></span><img id = "today-icon"></img></li>
+                    <li><span id = "today-current"></span></li>
+                    <li><span id = "today-feels-like"></span></li>
+                    <li><span id = "today-wind-speed"></span>mph <span id = "today-wind-direction"></span></li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="tomorrow">
+            <div class="tomorrow-wrapper">
+                <h3>Tomorrow</h3>
+                <img src="#" alt="beautiful image">
+                <ul>
+                    <li><span id = "tomorrow-weather"></span><img id = "tomorrow-icon"></img></li>
+                    <li><span id = "tomorrow-current"></span></li>
+                    <li><span id = "tomorrow-feels-like"></span></li>
+                    <li><span id = "tomorrow-wind-speed"></span>mph <span id = "tomorrow-wind-direction"></span></li>
+
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-wrapper">
+                <p>Author: Colton Kramer</p>
+                <p>Last Updated: <span id="last-updated"></span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="module" src="../modules/main.js"></script>
+<script type="module" src="../modules/fetch.js"></script>
+<script type="module" src="../modules/dom.js"></script>
+<script type="module" src="../modules/storage.js"></script>
+<script type="module" src="../modules/utilities.js"></script>
+
+</html>
