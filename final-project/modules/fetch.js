@@ -29,6 +29,7 @@ async function fetchWeather(urlWeather, place){
             throw new Error(`HTTP error: ${response.status}`);
         }
         const forecast = await response.json();
+        console.log(forecast);
         addWeather(forecast, place);
         
     }

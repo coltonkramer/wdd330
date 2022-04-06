@@ -1,4 +1,3 @@
-// const url = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&units=imperial&appid=953336065a7c8c590044bd8c972cc6b6';
 import { addToLocalStorage, getFromLocalStorage } from './storage.js'
 
 document.querySelector('#submit-button').addEventListener('click', () => {
@@ -9,6 +8,15 @@ document.querySelector('#submit-button').addEventListener('click', () => {
     } else {
         addToLocalStorage(zip);
         document.getElementById('zip-input').value = '';
+        
 }});
 
 getFromLocalStorage();
+
+document.getElementById("menu-close").addEventListener("click", toggleMenu);
+document.getElementById("menu-open").addEventListener("click", toggleMenu);
+
+function toggleMenu(){
+    let updateElement = document.querySelector(".form-wrapper");
+    updateElement.classList.toggle("open");
+  }

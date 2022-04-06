@@ -1,0 +1,99 @@
+/* 
+#e07b8d - light pink
+#a25a76 - pale pink
+#4a2748 - dark pink
+#090d25 - dark blue
+#003c67 - mid blue
+#314d82 - light blue
+font-family: 'Barlow Condensed', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans:wght@300&display=swap');
+
+
+body{
+    margin:0 auto;
+    /* background-color: #090d25; */
+    background-image: linear-gradient(to bottom right, #e07b8d, #a25a76,#4a2748);
+    background-repeat:round;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    /* overflow: hidden; */
+}
+.footer-wrapper{
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    font-size: x-small;
+    background-color: #292929;
+    margin: 0 auto;
+}
+.footer-wrapper p{
+    margin: 0 auto;
+    border: 1px solid #003c67;
+}
+.measures{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.future-weather-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #003c67;
+}
+.today{
+    text-align: center;
+    width: 100%;
+    
+}
+.today h4{
+    font-size: 4em;
+    margin: 1.2em auto;
+    height: 100%;
+}
+.form-wrapper{
+    background-color: #090d25;
+    opacity: .95;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    transition: all 0.25s ease-out;
+}
+.form-wrapper form{
+    width: 75%;
+    margin: 2em auto;
+}
+.form-wrapper form > *{
+    margin: 1em 0;
+}
+.hamburger-parent{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+.hamburger-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 10%;
+    padding: 1%;
+    cursor: pointer;
+  }
+  .hamburger-icon{
+    width: 36px;
+    height: 5px;
+    margin-top: 8px;
+    background-color: #4a2748;
+    border-radius: 15%;
+  }
+  .close-menu{
+    color: #949494;
+    text-align: right;
+    margin: 8%;
+    font-size:2.25em;
+    cursor: pointer;
+  }
+  .open{
+    transform: translatey(-100%);
+}
+#today-icon{
+  width: 75px;
+}
