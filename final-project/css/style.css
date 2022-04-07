@@ -10,11 +10,12 @@ font-family: 'Barlow Condensed', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans:wght@300&display=swap');
 
 
-body{
+html,body{
     margin:0 auto;
+    height: 100%;
     /* background-color: #090d25; */
     background-image: linear-gradient(to bottom right, #e07b8d, #a25a76,#4a2748);
-    background-repeat:round;
+    background-size: cover;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     /* overflow: hidden; */
@@ -42,7 +43,6 @@ body{
 .today{
     text-align: center;
     width: 100%;
-    
 }
 .today h4{
     font-size: 4em;
@@ -63,6 +63,12 @@ body{
 }
 .form-wrapper form > *{
     margin: 1em 0;
+}
+.tomorrow-wrapper{
+    text-align: center;
+}
+.next-wrapper{
+    text-align: center;
 }
 .hamburger-parent{
     display: flex;
@@ -91,9 +97,27 @@ body{
     font-size:2.25em;
     cursor: pointer;
   }
-  .open{
+.open{
     transform: translatey(-100%);
 }
 #today-icon{
   width: 75px;
+}
+@media screen and (min-width: 768px) {
+    
+    .page-wrapper{
+        height: 100%;
+    }
+.weather-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.future-weather-wrapper{
+    align-items: center;
+    background: none;
+    width: 66%;
+}
+
+
 }

@@ -33,6 +33,7 @@ export function addWeather(forecast, place){
     //Information needed for the forcast tomorrow
     const tomorrowCurrent = document.getElementById('tomorrow-current');
     const tomorrowHigh = document.getElementById('tomorrow-high');
+    const tomorrowLow = document.getElementById('tomorrow-low');
     const tomorrowWindSpeed = document.getElementById('tomorrow-wind-speed');
     const tomorrowWindDirection = document.getElementById('tomorrow-wind-direction');
     const tomorrowWeather = document.getElementById('tomorrow-weather');
@@ -42,6 +43,7 @@ export function addWeather(forecast, place){
    
     tomorrowCurrent.textContent = Math.round(forecast.daily[1].temp.day);
     tomorrowHigh.textContent = Math.round(forecast.daily[1].temp.max);
+    tomorrowLow.textContent = Math.round(forecast.daily[1].temp.min);
     tomorrowWindSpeed.textContent = Math.round(forecast.daily[1].wind_speed);
     const windDirectionTomorrow = Math.round(forecast.daily[1].wind_deg);
     tomorrowWindDirection.textContent = getWindDirection(windDirectionTomorrow);
@@ -50,9 +52,11 @@ export function addWeather(forecast, place){
     tomorrowIcon.setAttribute('alt', forecast.daily[1].weather[0].description);
     tomorrowHeader.textContent = getDayofTheWeek(getUpdate(date).getDay() + 1);
 
+
      //Information needed for the forcast tomorrow
      const nextCurrent = document.getElementById('next-current');
      const nextHigh = document.getElementById('next-high');
+     const nextLow = document.getElementById('next-low');
      const nextWindSpeed = document.getElementById('next-wind-speed');
      const nextWindDirection = document.getElementById('next-wind-direction');
      const nextWeather = document.getElementById('next-weather');
@@ -62,6 +66,7 @@ export function addWeather(forecast, place){
     
      nextCurrent.textContent = Math.round(forecast.daily[2].temp.day);
      nextHigh.textContent = Math.round(forecast.daily[2].temp.max);
+     nextLow.textContent = Math.round(forecast.daily[2].temp.min);
      nextWindSpeed.textContent = Math.round(forecast.daily[2].wind_speed);
      const windDirectionnext = Math.round(forecast.daily[2].wind_deg);
      nextWindDirection.textContent = getWindDirection(windDirectionnext);
