@@ -1,27 +1,47 @@
 const links = [
   {
-    label: "Week1 notes",
+    label: "Week 1 Notes",
     url: "week1/index.html",
   },
   {
-    label: "Week2 notes",
+    label: "Week 2 Notes",
     url: "week2/index.html",
   },
   {
-    label: "Week3 notes",
+    label: "Week 3 Notes",
     url: "week3/index.html",
   },
   {
-    label: "Week4 notes",
+    label: "Week 4 Notes",
     url: "week4/index.html",
   },
   {
-    label: "Week5 notes",
+    label: "Week 5 Notes",
     url: "week5/index.html",
   },
   {
-    label: "Todo list",
+    label: "Mid Term Project | Todo list",
     url: "challenge-one-to-do/index.html",
+  },
+  {
+    label: "Week 7 Notes",
+    url: "week7/index.html",
+  },
+  {
+    label: "Week 8 Notes",
+    url: "week8/index.html",
+  },
+  {
+    label: "Week 9 Notes",
+    url: "week9/index.html",
+  },
+  {
+    label: "Week 10 Notes",
+    url: "week10/index.html",
+  },
+  {
+    label: "Final Project | Weather App",
+    url: "final-project/src/index.html",
   },
 ];
 const list = document.querySelector(".assignment-list");

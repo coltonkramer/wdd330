@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Week 8 Reading</title>
+</head>
+<body>
+    <header>
+        <h1>Week 8 Reading</h1>
+    </header>
+    <main>
+        <h2>Chapter 8:</h2>
+        <p>
+            Transform:<br>
+            The transform property lets you translate, rotate, and/or skew any element on the page without any JavaScript. It is all done trough CSS.  Something to note is transforms do not work on inline elements so we need to add:
+            display: inline-block;<br><br>
+            Translation:<br>
+            Translation functions allow you to move elements in any 2d direction; up, down, left, and right. It is similar to the position: relative combined with top and left declarations. Translation allows movement that does not disrupt the flow of a document. 
+            Up and right take positive numbers, down and left take negative each on their respective axis of course.<br> So to move right 45px we would say “transform: translate(45px);” If we put “-45px” here instead, it would move to the left 45px. Easy enough.
+            transform: translateX(40px)<br><br>
+            Scaling:<br>
+            Scale takes 1 or 2 arguments like this “transform: scale(x,y)” or like this “scale(n)”. The 2-argument version allows you to fine tune the scaling by giving and dimensions for both x and y. If you want to keep the aspect ratio you use the single argument version that will scale both the horizontal and vertical axis by the same value. These are often used with hovers to grow the element as a form of responsivity.<br>  
+            transform: scale(1.5, 0.25);<br>
+            scale(1.5)<br><br>
+            Rotation:<br>
+            Rotation just like the name suggests rotates the element that have been selected. Like the example below.<br>
+            transform: rotate(10deg)<br><br>
+            Skew:<br>
+            Again these names are very forgiving. Skew will give the element a skew when given 1 or 2 degrees. The 2-argument version works the same as the scale but in this case the 1 argument version omits the y axis and only skews the on the x axis.<br>
+            transform: skew(15deg, 4deg);
+        </p>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Week 7 Reading</title>
+</head>
+<body>
+    <header>
+        <h1>Week 7 Reading</h1>
+    </header>
+    <main>
+        <h2>Chapter 11:</h2>
+        <p>
+
+            Functions are first class objects which mean they can have properties and methods themselves. If you take the length property of a function it will return the number of arguments it has. 
+            The call() method can be used to set the value of this inside a function that is provided as the first argument. If you had an object called clark that store {name: ‘Clark’}. Entering clark as an argument and logging this.name would return ‘Clark’. 
+            <br>
+        You can add your own properties to functions the same way you can add them to any object in JS. 
+        <br><br>
+        An IIFE is an (Immediately Invoked Function Expression) function that runs as soon as it is defined. There is no need to save or store anything here because variables are temporary, and function only run one time. These can be used to create an isolated environment while using strict mode or can be used to create self-contained code blocks that run independently of each other. 
+        <br><br>
+        Functions in JavaScript can call, define, recall, and even redefine themselves. Using an anonymous function and assigning it to a variable with the same name as the function.
+        <br><br>
+        Recursive functions are those that invoke themselves until a certain condition is met. This is done using if/else statements.
+        <br><br>
+        Callbacks can be used to facilitate event driven asynchronous programming. In javascript only one line of code will be processed at a time. Error first callbacks – callbacks have two arguments. The first is the error argument, which is an error object provided if something goes wrong when completing the operation. The second is any data returned by the operation used in the body of the callback.
+        <br><br>
+        Promises represent the future result of an asynchronous operation. Promises don’t do anything that cant be done with a callback but they help simplify the process and avoid messy code with many callbacks. 
+        Closure is formed when the inner function is returned by the outer function, maintaining access to any variables declared inside the enclosed function. 
+    </p>
+        <h2>
+            Chapter 13
+        </h2>
+        <p>
+            Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading. Ajax revolutionized the way websites worked and ushered in a new age of web applications. 
+            The fetch API uses promises to avoid callback hell and also streamlines a number of concepts that had become cumbersome when using the XMLHttpRequest. Fetch API uses a global fetch() method followed by the response .then(). Along with a .catch() that will run the code inside of it if an error is encountered.
+            We can use Ajax to send information as well usually in the form of a JSON string. 
+        </p>
+        <h2>Group Assignment</h2>
+          <p><a href="hiking-complete.html">Here</a> is the link to our group assignment.</p>
+        
+    </main>
+
+</body>
+</html>

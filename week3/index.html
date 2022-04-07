@@ -4,58 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
     <title>Week 3 Reading</title>
 </head>
 <body>
-    <p>
-            const MOUNTAINS = [
-              {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
-              {name: "Everest", height: 8848, place: "Nepal"},
-              {name: "Mount Fuji", height: 3776, place: "Japan"},
-              {name: "Vaalserberg", height: 323, place: "Netherlands"},
-              {name: "Denali", height: 6168, place: "United States"},
-              {name: "Popocatepetl", height: 5465, place: "Mexico"},
-              {name: "Mont Blanc", height: 4808, place: "Italy/France"}
-            ];
+    <header>
+        <h1>Week 3 Reading</h1>
+      </header>
+    <main>
+
+        <p>
+            const MOUNTAINS = [<br>
+              {name: "Kilimanjaro", height: 5895, place: "Tanzania"},<br>
+              {name: "Everest", height: 8848, place: "Nepal"},<br>
+              {name: "Mount Fuji", height: 3776, place: "Japan"},<br>
+              {name: "Vaalserberg", height: 323, place: "Netherlands"},<br>
+              {name: "Denali", height: 6168, place: "United States"},<br>
+              {name: "Popocatepetl", height: 5465, place: "Mexico"},<br>
+              {name: "Mont Blanc", height: 4808, place: "Italy/France"}<br>
+              ];<br>
+              
+              const body = document.querySelector('body')<br>
+              const table = document.createElement('table')<br>
+              const tableHeadingContainer = document.createElement('thead')<br>
+              const tableHeadingRow = document.createElement('tr')<br>
+              const tableHeadingName = document.createElement('th')<br>
+              const tableHeadingHeight = document.createElement('th')<br>
+              const tableHeadingPlace = document.createElement('th')<br>
+              
+              tableHeadingName.textContent = 'Name'<br>
+            tableHeadingHeight.textContent = 'Height'<br>
+            tableHeadingPlace.textContent = 'Place'<br>
             
-            const body = document.querySelector('body')
-            const table = document.createElement('table')
-            const tableHeadingContainer = document.createElement('thead')
-            const tableHeadingRow = document.createElement('tr')
-            const tableHeadingName = document.createElement('th')
-            const tableHeadingHeight = document.createElement('th')
-            const tableHeadingPlace = document.createElement('th')
+            tableHeadingRow.append(tableHeadingName)<br>
+            tableHeadingRow.append(tableHeadingHeight)<br>
+            tableHeadingRow.append(tableHeadingPlace)<br>
             
-            tableHeadingName.textContent = 'Name'
-            tableHeadingHeight.textContent = 'Height'
-            tableHeadingPlace.textContent = 'Place'
+            tableHeadingContainer.append(tableHeadingRow)<br>
+            table.append(tableHeadingContainer)<br>
             
-            tableHeadingRow.append(tableHeadingName)
-            tableHeadingRow.append(tableHeadingHeight)
-            tableHeadingRow.append(tableHeadingPlace)
+            const tableBodyContainer = document.createElement('tbody')<br>
             
-            tableHeadingContainer.append(tableHeadingRow)
-            table.append(tableHeadingContainer)
-            
-            const tableBodyContainer = document.createElement('tbody')
-            
-            MOUNTAINS.forEach(i => {
-                let tableBodyRow = document.createElement('tr')
-                let tdName = document.createElement('td')
-                tdName.textContent = i.name
-                tableBodyRow.append(tdName)
-                let tdHeight = document.createElement('td')
-                tdHeight.textContent = i.height
-                tableBodyRow.append(tdHeight)
-                let tdPlace = document.createElement('td')
-                tdPlace.textContent = i.place
-                tableBodyRow.append(tdPlace)
-                tableBodyContainer.append(tableBodyRow)
+            MOUNTAINS.forEach(i => {<br>
+                let tableBodyRow = document.createElement('tr')<br>
+                let tdName = document.createElement('td')<br>
+                tdName.textContent = i.name<br>
+                tableBodyRow.append(tdName)<br>
+                let tdHeight = document.createElement('td')<br>
+                tdHeight.textContent = i.height<br>
+                tableBodyRow.append(tdHeight)<br>
+                let tdPlace = document.createElement('td')<br>
+                tdPlace.textContent = i.place<br>
+                tableBodyRow.append(tdPlace)<br>
+                tableBodyContainer.append(tableBodyRow)<br>
                 
-                return tableBodyContainer
+                return tableBodyContainer<br>
             })
-            table.append(tableBodyContainer)
-            body.append(table)
-    </p>
+            table.append(tableBodyContainer)<br>
+            body.append(table)<br>
+        </p>
+        <p><a href="team-activity.html">Here</a> is the link to our group assignment.</p>
+        <p>The first and second log shows the inventors from the list who were born in the 1500's</p>
+        <p>The next log shows the first and last names of all the inventors in the list.</p>
+        <p>The fourth log shows the inventors sorted from oldest to youngest. Oldest meaning born longest ago.</p>
+    </main>
 </body>
 </html>
